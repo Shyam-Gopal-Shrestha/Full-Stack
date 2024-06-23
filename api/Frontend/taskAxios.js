@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const API_URL = import.meta.env.VITE_API_URL
+const API_URL = import.meta.env.PROD ? 'https://full-stack-i4cb.onrender.com/api/tasks' : "http://localhost:8000/api/tasks"
 
 // GET a task |  GET request | read
 export const getTasks = () => {
